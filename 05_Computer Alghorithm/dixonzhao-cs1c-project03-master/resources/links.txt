@@ -1,0 +1,28 @@
+link www.google.com
+link news.google.com
+link www.educationnews.org
+link www.nytimes.com
+link www.nytimes.com/pages/education
+back
+back
+back
+link www.technologyreview.com
+back
+link www.techtimes.com
+link www.techtimes.com/biztech
+link www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm
+back
+back
+forward
+forward
+link www.java.com/en/java_in_action/alice.jsp
+contains news.foogle.com
+contains www.nytimes.com
+link www.instructables.com
+link www.ign.com
+link www.ted.com
+back
+back
+contains www.ted.com
+link www.foogle.com
+contains www.ted.com

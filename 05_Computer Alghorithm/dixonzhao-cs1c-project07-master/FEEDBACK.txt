@@ -1,0 +1,34 @@
+FEEDBACK:
+
+Send me a private message via Canvas Inbox so we can discuss why yuo are 
+   missing a key class in your submission.
+
+   
+-8 Missing class FHhashQPwFind resulting in compilation error:
+FHhashQPwFind cannot be resolved to a type
+
+
+Good concise description of the purpose of each file in your README.
+    However, some of the terminology you use is non-standard and hence
+    unclear. For example, what do you mean by "run with both reverse case"?
+
+
+Extra Credit Opportunity:
++0 How did you generate the data in your RUN.txt file?
+   Why does the statements: "Finding song id: 4
+                           Song id 4 found in tableOfSongIDs.
+   repeat many times?
+   I'm unable to give your credit for your work when it is unclear
+   how you generated your data.
+
+    In your README.txt why are you comparing Linear Probing with Quadratic Probing?
+    For future read the project description carefully so you receive 
+    credit for your work.
+    
+    
+For future make sure to follow the complete project requirements. The required
+   elements are necessary for you me to better understand your analysis in order
+   to give you credit.
+       
+-Bita.
+

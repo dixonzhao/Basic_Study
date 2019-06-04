@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type"
+	content="text/html; charset=windows-1252" />
+<title>Assignment 5</title>
+<meta name="generator" content="LibreOffice 5.4.0.3 (Windows)" />
+<meta name="created" content="00:00:00" />
+<meta name="changed" content="2017-08-07T07:31:30.412000000" />
+</head>
+<body lang="en-US" dir="ltr">
+	<h1>CS1A GUI Assignment 5</h1>
+	<p style="margin-bottom: 0in">By Dr. Baba Kofi Weusijana</p>
+	<p style="margin-bottom: 0in">Developed Summer 2017</p>
+	<p style="margin-bottom: 0in">
+		<br /> Your group must read <strong>all</strong> the module items
+		starting with "Baby GUIs" through " Transporter Price Version" in
+		order to complete this assignment. Put the code from the " Transporter
+		Price Version" into a <strong>separate project</strong> and get it
+		working. Then you all can use it as a guide to how to write the code
+		for your ControlsFrame class.
+	</p>
+	<p style="margin-bottom: 0in">Your student group&rsquo;s assignment
+		is to make a non-robotic Java Program that has a Graphical User
+		Interface(GUI) using Java&rsquo;s AWT(Abstract Windowing Toolkit) and
+		Swing components. The finished program should use the provided Gallery
+		class and will show 10 movie posters (one poster at at time) whose
+		ImageDisplay instance is placed into a JFrame and controlled by an
+		instance of the ControlsFrame class. Your group will write the
+		ControlsFrame class, the Gallery and ImageDisplay classes are already
+		written for you. The ImagesDisplay class can be run as an application
+		to show you (the developer) how it works. Regular users will run the
+		Gallery class as an application. The final result of running the
+		Gallery class application should look like this.</p>
+	<p style="margin-bottom: 0in">
+		<img src="index_html_9448a71e9c333c8d.png" name="Example1"
+			align="left" width="703" height="439" border="0"
+			alt="How your finished Java application should look when it is running." />
+		From the dropdown combobox control a user can choose to interactively
+		display 1 of 10 posters. Three poster files are provided. You should
+		find other 7-10 posters of your own by doing image searches with <a
+			href="https://search.creativecommons.org/">https://search.creativecommons.org/</a>
+		and include the image files in the project in the top-level project
+		folder next to the other images. You can find out more about the Image
+		class and images it supports with the getImage method at <a
+			target="_blank"
+			href="https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Image.html">https://docs.oracle.com/javase/8/docs/api/index.html?java/awt/Image.html</a>
+	</p>
+	<p style="margin-bottom: 0in">Users must also be able to set the
+		size of the JFrame the ImageDisplay instance has been added to by
+		entering whole numbers into labeled width and height text areas and
+		clicking a button labeled &ldquo;Set Size&rdquo;.</p>
+	<p style="margin-bottom: 0in">Your group will need to convert the
+		Strings from the width and height text areas into ints for calling the
+		setSize method on the JFrame that contains the ImageDisplay instance.
+		You can do it like this:</p>
+	<pre>jFrame.setSize(Integer.parseInt(widthTextArea.getText()),<br />               Integer.parseInt(heightTextArea.getText()));</pre>
+	<p style="margin-bottom: 0in">
+		The Integer class is a wrapper class for the primitive int type and
+		parseInt is one of its static methods, so you don't have to make an
+		instance of Integer to use it. For more info see:<br /> <a
+			target="_blank"
+			href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-">https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-</a>
+	</p>
+	<h2>What Your Group Should Submit:</h2>
+	<p style="margin-bottom: 0in">
+		To submit, <b>zip archive all of this project</b> and upload it to the
+		related Canvas assignment.
+	</p>
+</body>
+</html>

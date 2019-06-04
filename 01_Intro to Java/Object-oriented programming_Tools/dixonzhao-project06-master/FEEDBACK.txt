@@ -1,0 +1,42 @@
+FEEDBACK:
+
+You are on the right track.
+   However you are losing valuable points due to not following key requirements of the project description.
+   If you have any questions come to office hours or post on discussion forum.
+
+
+-1 Missing copy constructor for SubscriptionYear. See sample output 1.
+	In order to properly create a deep copy of a list properly:
+        - the list must invoke the copy constructor of each node; 
+	- a node must copy it's data portion, etc;
+	- the data (here Country class) must invoke the copy constructor of each 
+          SubscriptionYear object;
+	- finally class SubscriptionYear only includes primitives so it only needs 
+          to create a new object of type SubscriptionYear and return that.
+
+	The statement below results in a shallow copy of SubscriptionYear
+	 this.subscriptions[someIndex] = original.subscriptions[someIndex];
+
+
+-3 Missing implementation of copy constructor for class Country as required by project description:
+"Provide a copy constructor for such that a deep copy of a Country object provides a deep copy of the subscriptions."
+    resulting in compilation errors:
+"The constructor Country(Country) is undefined"
+   See above description on modifying or excluding required methods.
+
+-Bita.
+
+
+Sample output 1:
+Which index in the list do you want to modify the subscriptions?
+selected index = 2
+Modified first three years for country 'Beautiful Foothill': Set number of subscriptions to '7777', '8888' and '9999'.
+original list: Afghanistan 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.112598381 0.865196277 2.498055472 4.826865367 9.833164022 17.71624331 29.22037376 37.89493697 45.77817474 60.32631999 65.45219346 70.66135885 74.88284241
+Belize 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.201592581 0.411172831 0.747480214 1.028369629 1.164387324 1.570531759 2.842663676 7.046515722 15.96872731 20.54645981 23.38066005 28.29761545 35.30450132 42.2961808 41.34020042 54.51721037 53.74564807 62.93070205 70.31965347 53.20712214 52.61072612 50.712566
+Bahrain 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.142563513 0.381286664 0.620306327 0.883522952 1.037818786 1.442965201 1.852315921 2.120546339 3.207749877 4.895960832 6.913956774 9.799631738 14.90809458 20.82466731 30.78644018 42.87476619 53.10146463 57.39322693 79.19074229 87.21698081 95.42373897 108.1005238 129.0979339 117.6607732 125.2084477 131.009991 161.1670576 165.9088811 173.2739335
+...
+
+copied list: Afghanistan 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.112598381 0.865196277 2.498055472 4.826865367 9.833164022 17.71624331 29.22037376 37.89493697 45.77817474 60.32631999 65.45219346 70.66135885 74.88284241
+Belize 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.201592581 0.411172831 0.747480214 1.028369629 1.164387324 1.570531759 2.842663676 7.046515722 15.96872731 20.54645981 23.38066005 28.29761545 35.30450132 42.2961808 41.34020042 54.51721037 53.74564807 62.93070205 70.31965347 53.20712214 52.61072612 50.712566
+Beautiful Foothill 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.142563513 0.381286664 0.620306327 0.883522952 1.037818786 1.442965201 1.852315921 2.120546339 3.207749877 4.895960832 6.913956774 9.799631738 14.90809458 20.82466731 30.78644018 42.87476619 53.10146463 57.39322693 79.19074229 87.21698081 95.42373897 108.1005238 129.0979339 117.6607732 125.2084477 131.009991 161.1670576 165.9088811 173.2739335
+...

@@ -1,0 +1,35 @@
+The result table is in the Excel result file or Resources folder's 01 picture.
+
+The abstract result of the table : (explanation are below)
+1.    The fluctuation time correlates with the table generate method of the array.
+2.    The range that seems to be flat has a positive correlation with the size of the array. (more massive the array, flatter the running time)
+3.    The sort time has a negative correlation with the recursion size.
+4.    The minimal range has a negative correlation with the array size.
+5.    Suggested best optimal recursion limit arrays of various sizes will be
+        1. Arrary Size should at least exceed 2,000,000, suggests 3,000,000 or more.
+        2. Recursion limit should be at least 100, suggests 150 or more.
+
+
+Before the explanation, I have to mention the data process method.
+
+Each case will be run six times and take the average to avoid the jump-off time.
+
+For easy to visualize, I have generated the table with every two results in that 1 million range; however, I will still leave all ten remain graphs at the raw table page and below the first four primary page(page 2 of the Excel file). The proceed data method was to calculate each array size’s total time and use the time of each item to divide it. In another word, is to get the percent of the time among all array time to limit the difference between each array size’s difference. Like, the unprocessed data of array size 20000’s most data is around 10, but the 2220000’s most data is approximately 150. Only use percent method can avoid this difference.
+
+
+Also, for the first picture, this is the typical set which everyone was selected for showing the characteristic of every data. To illustrate the difference, every set has plus 0.00x(x is for the million set it is in) to built gaps. 
+
+
+Next, we can start to explain the discovery from this table. 
+
+First, since each set was the average of six running times, the effect of each set has been lower to an acceptable level not to show significant differences in all data points. However, the data in lower array size is very unstable(See picture 02-1), therefore it will be the problem of the generating the table. 
+
+Second, from the 0 million set which is the bottom two line. It is easy to discover that the result is volatile; therefore, the first character of the data is The running time stability has a positive correlation with the proceed array size. 
+For example, we can see the running proceed time of two million set in picture 02-1 and 02-2 in the resources folder that the First graph is 1 million level, and the second graph is 7 million level. The data in 1 million level is very unstable, but in 7 million level the figure is very stable which can support result 2.
+
+The second discovery is the sorting time has a negative correlation with the recursion size which can be proved by the summary graph 01 in resources folder or Result Excel file.
+We can see in the chart that in all million set the proceed time will decrease with the growth of the recursion limit.
+
+One last discovery is that the minimum running time has a different interval along with the growth of the array size for example as the graph Picture 03 in resources folder or Result Excel file.
+It is obvious to see that there are four different lowest sizes among different million set, from below to above each is: 185-300, 245-300, 270-300, 280-300.
+The range that seems to be minimal has a negative correlation with the size of the array.

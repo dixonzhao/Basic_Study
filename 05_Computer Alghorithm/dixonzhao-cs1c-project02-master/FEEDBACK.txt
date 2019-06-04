@@ -1,0 +1,65 @@
+FEEDBACK:
+
+Accepting as on time.
+
+
+Good implementation of the parameterized findSubset() method. You are very close.
+	However, consider optimizing it so it can handle larger sets such as a larger
+	set of 12 elements.
+	
+
+-1 Incomplete implementation of class SubsetSum findSubset() method does not 
+   successfully find existing subset whose total matches target.
+   See sample output below.
+   
+   
+-1 Incomplete implementation of class SubsetSum findSubset() method does not 
+   find closest subset < target when no exact match exists.
+   See sample output below.
+   	
+
+-1 Incomplete implementation of class Subset findSubset() method does
+   not find subsets in a reasonable amount of time. Why are you trying
+   to find the powerset instead of the proposed algorithm in modules?
+   See sample output showing incomplete run.
+      	
+-0 Check your index.html subsetsum documentation which is difficult to 
+   read due to extraneous symbols.
+   
+Nice use of annotations in your SubsetSum class.
+
+-Bita.
+
+
+
+sample output 1:
+Groceries wanted:
+[2.5, 4.5, 11.5, 7.0, 15.0, 4.5, 6.0, 8.0]
+
+Enter your budget:
+Budget entered: 25.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 129 ms : 337169 ns
+Purchased grocery prices are:
+[15.0, 7.0]
+
+
+sample output 2:
+Groceries wanted:
+[150.0, 70.5, 110.3, 80.0, 110.0]
+
+Enter your budget:
+Budget entered: 50.0
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 3 ms : 448128 ns
+Purchased grocery prices are:
+[70.5]
+
+
+sample output 3:
+Groceries wanted:
+[2.5, 4.5, 11.5, 7.0, 15.0, 4.5, 6.0, 8.0, 12.25, 4.0, 20.0, 27.5]
+
+Enter your budget:
+Budget entered: 120.0
+Note: did not complete

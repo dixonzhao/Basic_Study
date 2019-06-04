@@ -1,0 +1,76 @@
+/* Images */
+img {
+  border: 0;
+}
+
+hr
+{
+        max-height: 1px;
+        border: 0px;
+}
+
+/* NEW */
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+	text-align: left;
+}
+
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.5em; }
+  h4 { font-size: 1.3em; }
+  h5 { font-size: 1.2em; }
+  h6 { font-size: 1.1em; }
+
+
+#sidebar .calendar
+{
+  font-size: 1 em;
+}
+
+#sidebar .calendar td
+{
+  padding: 2px;
+}
+
+#archive_tree_menu ul
+{
+        list-style: none inside;
+        padding: 0px 0px 0px 10px;
+        margin: 0px;
+}
+
+#img_float_left
+{
+  /* Used in the [img] tag when float=left */
+  float: left;
+  margin: 2px 8px 4px 2px;
+}
+
+#img_float_right
+{
+  /* Used in the [img] tag when float=right */
+  float: right;
+  margin: 2px 2px 4px 8px;
+}
+
+        .swatch {
+                height: 20px;
+                width: 20px;
+                color: #000;
+                background: #fff;
+                border: 1px solid #999;
+        }
+
+                div #toggleSetupLanguage, #toggleSetupGeneral, #toggleSetupEntries, #toggleSetupSidebar, #toggleSetupTrackbacks, #toggleSetupComments, #toggleSetupCompression
+                {
+                        padding: 0px 10px 0px 10px;
+                        border-width: 1px;
+                        border-style: dashed;
+                        display: block;
+                }
+

@@ -1,0 +1,46 @@
+/*
+--------------------
+Simple PHP Blog CSS Styles
+--------------------
+
+Name: Classic Theme
+Author: Alexander Palmo
+
+Description:
+This the is the css theme for the Classic theme.
+You can use this as a template for your own themes.
+
+Also refer to user_style.php...
+*/
+
+/* General */
+
+body
+{
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  /* Standard. Readable */
+  font-family: Arial, Helvetica, Sans-Serif;
+  /* font-family:  'Lucida Grande', Geneva, sans-serif; */
+  /* font-family: Tahoma, Geneva, sans-serif; */
+  /* font-family: Geneva, Verdana, sans-serif; */
+  
+  /* Nice. Classic Looking */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: Georgia, serif; */
+  /* font-family: Book Antiqua, Palatino, serif; */
+  
+  /* Modern. Kind of Funky */
+  /* font-family: 'Gill Sans', 'Trebuchet MS', Helvetica, sans-serif; */
+  
+  /* Monospace */
+  /* font-family: Lucida Console, Monaco, monospace; */
+}
+
+#gfloat {
+     position:relative;
+     overflow:auto;
+}
+

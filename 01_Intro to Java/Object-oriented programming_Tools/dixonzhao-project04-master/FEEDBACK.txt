@@ -1,0 +1,54 @@
+FEEDBACK:
+
+Creating objects and calling methods is an expensive process. So, if it does not
+   help the readability and/or efficiency of your implementation it is better to 
+   simplify the implementation. We do not need the CellularData class anymore.
+   Instead consider that the class Country holds a one dimensional array of 
+   subscription year objects. In this way when we move to a linked list data structure 
+   the change is easier. 
+
+
+-0 Why is your class Country constructor creating an object of type CellularData?
+		CellularData cel= new CellularData(1, sizeC, startY);
+		
+
+-0 Why are the constructors of class Country protected? 
+	Country(){
+		...
+	}
+
+	Country(String name,int sizeC){
+
+   Omitting the visibility (i.e. public/private/protected) of a method 
+   defaults to protected.
+
+
+-0.5 Incomplete implementation of class Country getNumSubscriptionsForPeriod() method 
+    should throw an IllegalArgumentException to the caller instead of catching the exception.
+      try {
+			if(startYear>endYear) {
+				temp=startYear;
+				startYear=endYear;
+				endYear=temp;
+				throw new IllegalArgumentException("");
+			}
+		}catch(Exception e) {
+			System.out.println("Wrong order of years range, has been automatically changed");
+		}
+    should be:
+    	public double getNumSubscriptionsForPeriod(int startYear, int endYear) throws IllegalArgumentException
+    	{
+    	    // ...
+    	    
+    	    // when invalid input is seen
+    	        throws new IllegalArgumentException(...)
+    	 }
+    Otherwise, the caller (in this case the main() method has nothing to catch.
+
+    Next time minus one or more for this.
+   
+ 
+Excellent concise README!
+  
+-Bita.
+

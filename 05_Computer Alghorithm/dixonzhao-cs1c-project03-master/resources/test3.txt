@@ -1,0 +1,6 @@
+link www.nytimes.com
+link www.nytimes.com
+link www.nytimes.com
+link www.nytimes.com
+back
+contains nyt

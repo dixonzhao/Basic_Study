@@ -1,0 +1,104 @@
+// TODO: For every project run your program.
+//       Then copy and paste the output in a file titled RUN under resources folder. 
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/test2.csv
+
+NOTES: Test for if the algorithm works
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=56780:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/out/production/dixonzhao-cs1c-project02:/Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/lib/json-simple-1.1.1.jar:/Users/DixonRaptor-WL/.m2/repository/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar subsetsum.ShoppingBag
+The list of groceries has 4 items.
+Groceries wanted:
+[3.0, 4.0, 1.0, 8.0]
+
+Enter your budget:
+10
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 3 ms : 703908 ns
+Purchased grocery prices are:
+[3.0, 4.0, 1.0]
+Done with ShoppingBag.
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/test2.csv
+
+NOTES: One run which cannot been proceed since the space is limited
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=59883:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/out/production/dixonzhao-cs1c-project02:/Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/lib/json-simple-1.1.1.jar:/Users/DixonRaptor-WL/.m2/repository/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar subsetsum.ShoppingBag
+The list of groceries has 60 items.
+Groceries wanted:
+[4.3, 58.1, 14.3, 24.0, 88.8, 8.5, 55.1, 34.7, 68.7, 7.8, 98.6, 70.2, 78.6, 33.0, 59.8, 42.8, 23.7, 0.4, 15.8, 72.6, 21.0, 55.4, 86.9, 67.2, 31.9, 1.7, 64.1, 45.7, 16.2, 49.6, 50.8, 14.0, 54.5, 48.6, 60.4, 27.4, 26.6, 77.8, 43.0, 34.3, 75.2, 36.7, 31.0, 89.5, 97.1, 40.6, 74.0, 64.2, 81.7, 41.0, 21.7, 87.5, 22.9, 61.1, 61.4, 76.0, 41.7, 66.2, 85.1, 85.2]
+
+Enter your budget:
+10
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at subsetsum.SubsetSum.generateList(SubsetSum.java:74)
+	at subsetsum.SubsetSum.generateList(SubsetSum.java:92)
+	at subsetsum.SubsetSum.generateList(SubsetSum.java:92)
+	at subsetsum.SubsetSum.generateList(SubsetSum.java:92)
+    ...
+    at subsetsum.SubsetSum.generateList(SubsetSum.java:92)
+
+Process finished with exit code 1
+-----------------------------------------------------
+Test file: resources/test2.csv
+
+NOTES: testing for limitation of algorithm :1
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60007:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/out/production/dixonzhao-cs1c-project02:/Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/lib/json-simple-1.1.1.jar:/Users/DixonRaptor-WL/.m2/repository/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar subsetsum.ShoppingBag
+The list of groceries has 7 items.
+Groceries wanted:
+[15.5, 86.9, 34.3, 76.6, 38.4, 5.2, 56.6]
+
+Enter your budget:
+10
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 32 ms : 528885 ns
+Purchased grocery prices are:
+[5.2]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+Test file: resources/test2.csv
+
+NOTES: testing for limitation of algorithm :1
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60021:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/out/production/dixonzhao-cs1c-project02:/Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/lib/json-simple-1.1.1.jar:/Users/DixonRaptor-WL/.m2/repository/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar subsetsum.ShoppingBag
+The list of groceries has 10 items.
+Groceries wanted:
+[8.6, 6.4, 1.6, 8.7, 0.5, 1.0, 3.4, 6.3, 1.4, 8.3]
+
+Enter your budget:
+10
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 4 sec : 742 ms : 234326 ns
+Purchased grocery prices are:
+[1.4, 8.6]
+Done with ShoppingBag.
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+Test file: resources/test2.csv
+
+NOTES: if the budget is larger than total sum, fast output
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60367:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/out/production/dixonzhao-cs1c-project02:/Users/DixonRaptor-WL/IdeaProjects/dixonzhao-cs1c-project02/lib/json-simple-1.1.1.jar:/Users/DixonRaptor-WL/.m2/repository/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar subsetsum.ShoppingBag
+The list of groceries has 10 items.
+Groceries wanted:
+[9.7, 7.2, 9.7, 9.2, 9.3, 5.0, 5.6, 5.7, 4.5, 9.2]
+
+Enter your budget:
+10000
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 4 sec : 689 ms : 483655 ns
+Purchased grocery prices are:
+[9.2, 4.5, 5.7, 5.6, 5.0, 9.3, 9.2, 9.7, 7.2, 9.7]
+Done with ShoppingBag.
+
+Process finished with exit code 0

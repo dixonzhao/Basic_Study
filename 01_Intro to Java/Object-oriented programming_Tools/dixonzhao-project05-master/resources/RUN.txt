@@ -1,0 +1,98 @@
+cellular_short_oneDecade.csv
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: initialize the list
+-----------------------------------------------------
+
+How many countries do you want to add to the list?
+5
+Warning, no data input, return to upper level
+Adding country with name "Bahamas, The" to the end of the list.
+Adding country with name "Bahamas, The" to the end of the list.
+Adding country with name Germany to the end of the list.
+Adding country with name Bangladesh to the end of the list.
+Adding country with name "Bahamas, The" to the end of the list.
+
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: test the toString();
+-----------------------------------------------------
+List of countries: "Bahamas, The" "Bahamas, The" Germany Bangladesh "Bahamas, The" 
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: -First test of the getIndex() method
+					-include situations
+						-first 
+						-middle 
+						-last 
+						-out of bound
+-----------------------------------------------------
+first: "Bahamas, The" 69.21279415 75.37855087 109.340767 102.7875065 101.2186453 118.8292307 81.5628489 80.65383375 76.05187427 82.29635806
+middle: Germany 94.55486999 102.2828888 115.1403608 126.5575074 126.2280577 106.4836959 109.6595675 111.5940398 120.9211651 120.4201855
+last: "Bahamas, The" 69.21279415 75.37855087 109.340767 102.7875065 101.2186453 118.8292307 81.5628489 80.65383375 76.05187427 82.29635806
+ERROR: Index out of the range of values.
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: first test of the contains() ;
+					-include situations
+						-have
+						-don't have 
+-----------------------------------------------------
+What country do you want to search for?
+Bahamas, The
+Yes, contains Bahamas, The
+Country Bahamas, The found with details:
+"Bahamas, The" 69.21279415 75.37855087 109.340767 102.7875065 101.2186453 118.8292307 81.5628489 80.65383375 76.05187427 82.29635806
+
+What country do you want to search for?
+akjdfweuikrrfweurfh
+Sorry, this list doesn't contain  akjdfweuikrrfweurfh
+Country akjdfweuikrrfweurfh not found.
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: Second test of the add(), toString() ;
+					-include situations for add()
+						* 1. add single country "xxx, xxx"
+						* 2.add country with other data 
+		 				* 3. add country empty with name 
+		 					**3-1. output 
+		 						***3-2. "Warning: No Parameter input, automatically stop"
+-----------------------------------------------------
+"Bahamas, The" "Bahamas, The" Germany Bangladesh "Bahamas, The" baaaa, aaaa aaaa 
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: Second test of the contains() after add() ;
+					-include situations
+						-have
+						-don't have 
+-----------------------------------------------------
+What country do you want to search for?
+aaaa
+Yes, contains aaaa
+no Subscritpions, only name
+Country aaaa found with details:
+aaaa
+
+What country do you want to search for?
+easkfefefiew
+Sorry, this list doesn't contain  easkfefefiew
+Country easkfefefiew not found.
+
+Done with TestCountryList.

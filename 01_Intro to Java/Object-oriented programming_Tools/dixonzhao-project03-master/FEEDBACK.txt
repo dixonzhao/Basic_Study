@@ -1,0 +1,24 @@
+FEEDBACK:
+
+Good exception handling in CSVReader constructor.
+    However, consider being more specific about the type of exception you are catching.
+
+
+Very good documentation of your implementation.
+
+
+-0 Why are you hard coding the numerical value instead of using a char type directly?
+			if(temp.charAt(i)==44){
+				if(temp.charAt(i+1)>=48 && temp.charAt(i+1)<=57) {
+				
+
+-1 For future, include additional test cases as required by project description.
+        Next time minus one for each case.
+	For example, check for a broader range of valid test cases.
+    Next time minus one for each..
+    	
+	
+Very good detailed README.
+
+-Bita.
+

@@ -1,0 +1,131 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: Test for initialize the list 
+-----------------------------------------------------
+How many countries do you want to add to the list?
+4
+Adding country with name Germany to the end of the list.
+Adding country with name Bangladesh to the end of the list.
+Adding country with name "Bahamas, The" to the end of the list.
+Adding country with name Brazil to the end of the list.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: test for country toString() and Country search(contains())
+-----------------------------------------------------
+Names of countries in list:
+0 Germany, 1 Bangladesh, 2 "Bahamas, The", 3 Brazil, 
+
+Size of list: 4
+
+List of countries: Germany 94.55486999 102.2828888 115.1403608 126.5575074 126.2280577 106.4836959 109.6595675 111.5940398 120.9211651 120.4201855
+Bangladesh 6.28776238 13.20573922 23.46762823 30.16828408 34.35334451 44.94535882 55.19256723 62.82023906 74.42964608 80.03535051
+"Bahamas, The" 69.21279415 75.37855087 109.340767 102.7875065 101.2186453 118.8292307 81.5628489 80.65383375 76.05187427 82.29635806
+Brazil 46.31418452 53.11025849 63.67475185 78.5549801 87.54187651 100.8810115 119.0023853 125.0018521 135.3050481 138.9514906
+
+
+What country do you want to search for?
+Germany
+Yes, contains it
+Country Germany found with details:
+Germany 94.55486999 102.2828888 115.1403608 126.5575074 126.2280577 106.4836959 109.6595675 111.5940398 120.9211651 120.4201855
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: test for subscription country search 
+-----------------------------------------------------
+Names of countries in list:
+0 Germany, 1 Bangladesh, 2 "Bahamas, The", 3 Brazil, 
+
+What country would you like subscription information about? (Enter a index between 0 and 3)
+2
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: Test for subscription year period 
+-----------------------------------------------------
+What subscription period do you want to total? (Enter [starting year],[end year].)
+1980,2010
+Warning: out of range of start year has been set to default start year: 2005
+Country is "Bahamas, The" , subscriptions from 1980 to 2010		
+ The output is:
+Total subscriptions for "Bahamas, The" between 1980 and 2010 is 576.767495 
+
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: test for  generic linked list of countries 
+-----------------------------------------------------
+Start with personal test 
+add country 'aaa' to linked list(country)
+no Subscritpions, only name
+aaa
+
+add country 'bbb' to linked list(country)
+no Subscritpions, only name
+no Subscritpions, only name
+aaa
+bbb
+
+add country 'ccc' to linked list(country)
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+aaa
+bbb
+ccc
+
+add country 'ddd' to linked list(country)
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+aaa
+bbb
+ccc
+ddd
+
+add country 'eee' to linked list(country)
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+no Subscritpions, only name
+aaa
+bbb
+ccc
+ddd
+eee
+
+
+
+Done with TestGenericList.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: Another test for invalid country search 
+-----------------------------------------------------
+What country do you want to search for?
+22
+Sorry, this list doesn't contain  it
+Country 22 not found.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/cellular_short_oneDecade.csv
+
+NOTES: another test for invalid year index
+-----------------------------------------------------
+What subscription period do you want to total? (Enter [starting year],[end year].)
+22,22222
+Warning: both input start year and end yaer out of range. 
+
+Done with TestGenericList.

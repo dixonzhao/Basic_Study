@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/Zhili/OneDrive/files/01-Normal/C-CS 1A/05 TAB– MISCELLANEOUS/course_files/Robots/becker.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

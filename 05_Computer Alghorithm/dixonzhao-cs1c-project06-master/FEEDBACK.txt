@@ -1,0 +1,109 @@
+FEEDBACK:
+
+Good implementation of garbage collection. You are very close.
+
+
+-0 Unreachable code due to order of calls on root node:
+   public LazySTNode removeHard(LazySTNode root, E x){
+      int compareResult;
+      LazySTNode replaceNode;
+      LazySTNode copyNode=root;
+
+      compareResult = x.compareTo(root.data);
+
+      if(root==null)    // Note: Unreachable code! Otherwise, root.data in line 
+         return null;   //       above will result in NullPointerException
+            
+
+-1 In removeHard() method, if the node has been found (i.e. compareResult==0) then
+   check if both children exists before calling findMinHard:
+   
+        // Once a node is found, remove the node.
+        // Here the node has both right and left children. So we rearrange the tree by 
+        // pulling up the subtree whose root is being removed.
+        else if (root.lftChild != null && root.rtChild != null)
+        {
+            // Find the min node from the right subtree. (The right and left children of the node remain as-is.)
+            save the found node = findMinHard(root.rtChild);            
+            
+            // Then put the min data into the node which was removed and update the deleted flag
+            
+            // now remove the node which was copied/pulled upwards
+            store in current root right child = removeHard(root.rtChild, root.data); 
+            
+            // Update the total number of nodes
+            mSizeHard--;   
+        }
+
+        // Else the node to remove has either a left or a right child, or no children.
+        // We are at the height 0 or 1 of the sub-tree. Let's remove the edge.
+        else
+        {
+            // Replace the deleted node with either its left or right child
+            root = (root.lftChild != null)? root.lftChild : root.rtChild;
+
+            // Update the total number of nodes
+            mSizeHard--;   
+        }
+        
+            
+Good description of the purpose of each test case in your RUN file. Make
+    sure to check for spelling errors.
+
+
++0.5 Excellent use of psuedo-code to help you think through the implementation!
+
+-Bita.
+
+
+
+sample output 1:
+...
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+lychee:0  milk:1  tomatoes:1  
+
+Testing traversing "soft" inventory:
+milk:1  tomatoes:1  
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 2
+
+Testing traversing "hard" inventory:
+lychee:0  milk:1  tomatoes:1  
+
+Testing traversing "soft" inventory:
+milk:1  tomatoes:1  
+
+
+
+sample output 2:
+...
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 14
+"soft" number of unique items (i.e. mSize) = 0
+
+Testing traversing "hard" inventory:
+apples:0  avocado:0  beans:0  cake:0  cereal:0  chicken:0  cookies:0  eggplant:0  fish:0  milk:0  onion:0  pie:0  soup:0  tomato:0  
+
+Testing traversing "soft" inventory:
+
+
+
+
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 0
+"soft" number of unique items (i.e. mSize) = 0
+
+Testing traversing "hard" inventory:
+apples:0  avocado:0  beans:0  cake:0  cereal:0  chicken:0  cookies:0  eggplant:0  fish:0  tomato:0  
+
+Testing traversing "soft" inventory:
+
+

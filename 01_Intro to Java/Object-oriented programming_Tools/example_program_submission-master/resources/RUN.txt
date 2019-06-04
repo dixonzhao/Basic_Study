@@ -1,0 +1,148 @@
+//-----------------------------------------------------------------------------
+  output 1 of MyTunes.java
+//-----------------------------------------------------------------------------
+Welcome to MyTunes!
+Songs to choose from:
+0, Happy, PharrelWilliams, Pop, 2014
+1, BestOfYou, FooFighters, Rock, 2005
+2, Wonderwall, Oasis, Rock, 1997
+3, Thriller, MJ, R&B, 1983
+4, BillieJean, MJ, R&B, 1983
+5, MyConsole, Eiffel65, Electronica, 1989
+6, Hymn, Moby, Electronica, 1995
+7, Living, Moby, Electronica, 1995
+
+TEST : adding song #2 to create mp3 [valid entry 0 to 8] :
+Wonderwall, Oasis, Rock, 1997
+
+TEST : adding song #2 to create mp3 [valid entry 0 to 8] :
+Wonderwall, Oasis, Rock, 1997
+
+TEST : Search artist to add to playlist:
+Requested: MJ
+Thriller, MJ, R&B, 1983
+BillieJean, MJ, R&B, 1983
+
+TEST : Search title and artist to add to playlist:
+Requested: BillieJean
+BillieJean, MJ, R&B, 1983
+
+TEST : Search title and artist to add to playlist:
+Requested: TITLE-DOES-NOT-EXIST MJ
+Search result is empty
+Done.
+
+
+
+//-----------------------------------------------------------------------------
+  output 2 of MyPlayList.java
+//-----------------------------------------------------------------------------
+Current tunes in library:
+0, Happy, PharrelWilliams, Pop, 2014
+1, BestOfYou, FooFighters, Rock, 2005
+2, Wonderwall, Oasis, Rock, 1997
+3, Thriller, MJ, R&B, 1983
+4, BillieJean, MJ, R&B, 1983
+5, MyConsole, Eiffel65, Electronica, 1989
+6, Hymn, Moby, Electronica, 1995
+7, Living, Moby, Electronica, 1995
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+3
+Print playlist:
+empty
+
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+4
+Enter artist [for example: Moby] to add to playlist:
+Moby
+Hymn, Moby, Electronica, 1995
+Living, Moby, Electronica, 1995
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+3
+Print playlist:
+Hymn, Moby, Electronica, 1995
+Living, Moby, Electronica, 1995
+
+
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+1
+Enter song numbers [for example: 1,2,3] to add to playlist:
+2,0
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+3
+Print playlist:
+Hymn, Moby, Electronica, 1995
+Living, Moby, Electronica, 1995
+Wonderwall, Oasis, Rock, 1997
+Happy, PharrelWilliams, Pop, 2014
+
+
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+7
+
+What would you like to do?
+  1. add songs
+  2. print library
+  3. print playlist
+  4. search for a song by artist in library
+  5. search for a song by title and artist in library
+  6. search for a song by genre and year in library
+  7. Quit
+Enter your selection:
+
+
+// INSTRUCTOR'S NOTE: this example is by no means exhaustive.

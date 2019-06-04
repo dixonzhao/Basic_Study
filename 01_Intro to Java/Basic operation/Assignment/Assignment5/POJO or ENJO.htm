@@ -1,0 +1,911 @@
+<!--?xml version="1.0" encoding="UTF-8" ?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script type="text/javascript" src="POJO%20or%20ENJO_files/300lo.json"></script><script type="text/javascript" src="POJO%20or%20ENJO_files/_ate.config_resp"></script>
+        <title>Blog 9000 - Comments - POJO or ENJO?</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Meta Data -->
+        <meta name="generator" content="Simple PHP Blog">
+        <link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="http://www.soft9000.com/blog9000/rss.php">
+        <link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="http://www.soft9000.com/blog9000/rdf.php">
+        <link rel="alternate" type="application/atom+xml" title="Get Atom 1.0 Feed" href="http://www.soft9000.com/blog9000/atom.php">
+        <link rel="search" type="application/opensearchdescription+xml" title="Blog 9000" href="http://www.soft9000.com/blog9000/plugins/search.php">
+
+        <!-- Meta Data -->
+        <!-- http://dublincore.org/documents/dces/ -->
+        <meta name="dc.title" content="Blog 9000 - Comments - POJO or ENJO?">
+        <meta name="author" content="Randall Nagy &amp; Associates">
+        <meta name="dc.creator" content="Randall Nagy &amp; Associates">
+        <meta name="dc.subject" content="training, consulting, authoring, services, randall, nagy, architecture, architect, mentor, author">
+        <meta name="keywords" content="training, consulting, authoring, services, randall, nagy, architecture, architect, mentor, author">
+        <meta name="dc.description" content="Soft9000.com features the Consulting, Mentoring, &amp; Training Services of Randall Nagy">
+        <meta name="description" content="Soft9000.com features the Consulting, Mentoring, &amp; Training Services of Randall Nagy">
+        <meta name="dc.type" content="weblog">
+        <meta name="dc.type" content="blog">
+        <meta name="resource-type" content="document">
+        <meta name="dc.format" scheme="IMT" content="text/html">
+        <meta name="dc.source" scheme="URI" content="http://www.soft9000.com/blog9000/index.php">
+        <meta name="dc.language" scheme="RFC1766" content="Array">
+        <meta name="dc.coverage" content="global">
+        <meta name="distribution" content="GLOBAL">
+        <meta name="dc.rights" content="(c) Randall Nagy. All Rights Reserved.">
+        <meta name="copyright" content="(c) Randall Nagy. All Rights Reserved.">
+
+        <!-- Robots -->
+        <meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE">
+        <meta name="revisit-after" content="7 days">
+
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="http://www.soft9000.com/blog9000/interface/favicon.ico">
+
+        <link rel="stylesheet" type="text/css" media="all" href="POJO%20or%20ENJO_files/common.css">
+        <link rel="stylesheet" type="text/css" media="all" href="POJO%20or%20ENJO_files/user_style.css">
+        <link rel="stylesheet" type="text/css" media="all" href="POJO%20or%20ENJO_files/style_003.css">
+	<link rel="stylesheet" media="only screen and (max-width: 800px)" href="POJO%20or%20ENJO_files/mediumres.css" type="text/css">
+	<link rel="stylesheet" media="only screen and (max-width: 640px)" href="POJO%20or%20ENJO_files/handheld.css" type="text/css">
+        <link rel="stylesheet" type="text/css" media="print" href="POJO%20or%20ENJO_files/print.css">
+
+	<script src="POJO%20or%20ENJO_files/ca-pub-6189525665177550.js"></script><script type="text/javascript" src="POJO%20or%20ENJO_files/sb_javascript.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="POJO%20or%20ENJO_files/style.css">
+<link rel="stylesheet" type="text/css" href="POJO%20or%20ENJO_files/style_002.css">
+
+<script type="text/javascript" src="POJO%20or%20ENJO_files/jquery-1.js"></script>
+<script type="text/javascript" src="POJO%20or%20ENJO_files/jquery_002.js"></script>
+<script type="text/javascript" src="POJO%20or%20ENJO_files/set.js"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function()	{
+	// Add markItUp! to your textarea in one line
+	$('#commment_text').markItUp(mySettings);
+	
+});
+-->
+</script>
+
+
+<script type="text/javascript">
+	<!--
+
+	// for custom comment editor only
+        // Insert Style Tags
+        function ins_styles(theform,sb_code,prompt_text,tag_prompt) {
+                // Insert [x]yyy[/x] style markup
+
+                // Get selected text
+                var selected_text = getSelectedText(theform);
+
+                if (selected_text == '') {
+                        // Display prompt if no text is selected
+                        var inserttext = prompt( 'Enter the text to be formatted:'+"\n["+sb_code+"]xxx[/"+sb_code+"]", '' );
+                        if ( (inserttext != null) ) {
+                                insertAtCaret(theform, "["+sb_code+"]"+inserttext+"[/"+sb_code+"]");
+                                theform.focus();
+                        }
+                } else {
+                        // Insert text automatically around selection
+                        insertAtCaret(theform, "["+sb_code+"]"+selected_text+"[/"+sb_code+"]");
+                        theform.focus();
+                }
+        }
+
+        // Insert URL Tag
+        function ins_url_no_options(theform) {
+                // inserts named url link - [url=mylink new=true]text[/url]
+                link_url = prompt('Enter the full URL for the link:'+'\n[url=xxx][/url]',"http://");
+                if ( (link_url != null) ) {
+                        // Get selected text
+                        var link_text = getSelectedText(theform);
+                        if (link_text == '') {
+                                // Display prompt if no text is selected
+                                link_text = prompt('Enter the text to be displayed for the link (Optional):'+'\n[url=]xxx[/url]',"");
+                        }
+                        if ( (link_text == null) || (link_text == '') ) {
+                                link_text = link_url;
+                        }
+                        str = '[url='+link_url+']'+link_text+'[/url]';
+
+                        insertAtCaret(theform, str);
+                        theform.focus();
+                }
+        }
+
+       // Insert Style Tags
+        function ins_style_dropdown(theform, sb_code) {
+                // Insert [sb_code]xxx[/sb_code] style markup
+
+                if ( sb_code != '-'+'-' ) {
+                        // Get selected text
+                        var selected_text = getSelectedText(theform);
+
+                        if (selected_text == '') {
+                                prompt_text = '[' + sb_code + ']xxx[/' + sb_code + ']';
+                                user_input = prompt( prompt_text, '' );
+                                if ( (user_input != null) ) {
+                                        insertAtCaret(theform, '['+sb_code+']'+user_input+'[/'+sb_code+']');
+                                        theform.focus();
+                                }
+                        } else {
+                                // Insert text automatically around selection
+                                insertAtCaret(theform, "["+sb_code+"]"+selected_text+"[/"+sb_code+"]");
+                                theform.focus();
+                        }
+                }
+        }
+
+        // Insert Image Tag
+        function ins_image_v2(theform) {
+                image_url = prompt('Enter the URL for the image:'+'\n[img=http://xxx] or [img=xxx]\n\nOptional:\nwidth=xxx height=xxx popup=true/false float=left/right','http://');
+                if ((image_url != null) && (image_url != '')) {
+                        // Optional
+                        image_width = prompt('Width (Optional):'+'\n[img=xxx width=xxx]','');
+                        image_height = prompt('Height (Optional):'+'\n[img=xxx height=xxx]','');
+                        image_popup = prompt('View full-size in pop-up when clicked (Optional):'+'\n[img=xxx popup=true/false]', '');
+                        image_float = prompt('Float (Optional):'+'\n[img=xxx float=left/right]','');
+
+                        str = '[img='+image_url;
+                        if ((image_width != null) && (image_width != '')) {
+                                str += ' width='+image_width;
+                        }
+                        if ((image_height != null) && (image_height != '')) {
+                                str += ' height='+image_height;
+                        }
+                        if ((image_popup != null) && (image_popup != '')) {
+                                image_popup.toLowerCase;
+                                if ( image_popup == 'true' || image_popup == 'false' ) {
+                                        str += ' popup='+image_popup;
+                                }
+                        }
+                        if ((image_float != null) && (image_float != '')) {
+                                image_float.toLowerCase;
+                                if ( image_float == 'left' || image_float == 'right' ) {
+                                        str += ' float='+image_float;
+                                }
+                        }
+                        str += ']';
+
+                        insertAtCaret(theform, str);
+                        theform.focus();
+
+                }
+        }
+
+
+        function getSelectedText(obj) {
+                if (document.selection && document.selection.createRange) {
+                        // Internet Explorer 4.0x
+
+                        obj.focus();
+                        var orig = obj.value.replace(/\r\n/g, "\n"); // IE Bug
+                        var range = document.selection.createRange();
+
+                        if (range.parentElement() != obj) {
+                                return '';
+                        }
+
+                        txt = range.text;
+
+                        return txt;
+                } else if (obj.selectionStart >= 0) {
+                        // FireFox & Safari
+                        var start = obj.selectionStart;
+                        var end    = obj.selectionEnd;
+                        var txt    = obj.value.substr(start, end-start);
+
+                        return txt;
+                } else {
+                        return '';
+		}
+	}
+
+	// end custom for comment editor
+	
+	// Insert Image Dropdown Menu
+	function ins_image_dropdown(theform,theImage) {
+		if (theImage.value != '-'+'-') {
+			insertAtCaret(theform, theImage.value);
+			theform.focus();
+		}
+	}
+	
+	//Insert Emoticon
+	function ins_emoticon(theform, emoticon) {
+		insertAtCaret(theform, emoticon);
+		theform.focus();
+	}
+	
+	// Validate the Form
+	function validate(theform) {
+		if (theform.blog_text.value=="" || theform.blog_subject.value=="") {
+			alert("Form Error.");
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	// Validate the Form
+	function validate_static(theform) {
+		if (theform.blog_text.value=="" || theform.blog_subject.value=="" || theform.file_name.value=="" ) {
+			alert("Form Error.");
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	function setCaretTo(obj, pos) {
+		if(obj.createTextRange) {
+			var range = obj.createTextRange();
+			range.move('character', pos);
+			range.select();
+		} else if(obj.selectionStart) {
+			obj.focus();
+			obj.setSelectionRange(pos, pos);
+		}
+	}
+	
+	function insertAtCaret(obj, text) {
+		var mytext;
+		obj.focus();
+		
+		if (document.selection) {
+			// 'Code For IE'
+			text = ' ' + text + ' ';
+			if (obj.createTextRange && obj.caretPos) {
+				var caretPos = obj.caretPos;
+				caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+				return;
+			}
+		} else if (obj.selectionStart!==false) {
+			// 'Code for Gecko'
+			var start = obj.selectionStart;
+			var end   = obj.selectionEnd;
+			
+			obj.value = obj.value.substr(0, start) + text + obj.value.substr(end, obj.value.length);
+		}
+		
+		if (start != null) {
+			setCaretTo(obj, start + text.length);
+		} else {
+			obj.focus();
+			obj.value += text;
+		}
+	}
+
+	-->
+</script>
+
+<style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_stumbleupon_badge,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!important}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;-webkit-transition:none;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;-webkit-transition:none;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-button{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style></head>
+    <body>
+	<script src="POJO%20or%20ENJO_files/jquery.js" type="text/javascript"></script>
+	<script language="javascript">
+	    $(document).ready(function(){
+                //$('#gbanner').load('/side_banner.php');
+		$(window).scroll(function () {
+		    set = $(document).scrollTop()+"px";
+		    $('#gfloat').animate({top:set},{duration:1000,queue:false});
+
+		});
+	    });
+	</script>
+
+<table cellspacing="3" cellpadding="2">
+<tbody><tr><td valign="top" bgcolor="#044A19" align="right">
+
+<div id="gfloat" style="top: 0px;">
+    <table>
+    <tbody><tr>
+      <td>
+      <font size="3" color="white">Site Sponsors:
+      </font></td>
+    </tr>
+    <tr>
+      <td id="gbanner">
+<!--- SIDEBAR --->
+<script async="" src="POJO%20or%20ENJO_files/adsbygoogle.js"></script>
+<!-- Soft9000 -->
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-6189525665177550" data-ad-slot="9534935028" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:120px;height:600px;" height="600" frameborder="0" width="120"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!--- SIDEBAR --->
+      </td>
+    </tr>
+    </tbody></table>
+</div>
+    
+</td><td width="810"> 
+      <div id="page">
+
+          <div id="header">
+            	    </div>
+
+            <div id="pagebody">
+                    <div id="sidebar">
+                      
+<!-- SIDEBAR MENU BEGIN -->
+
+<div><center><img src="POJO%20or%20ENJO_files/s9kTinyLogo_002.png">
+<marquee scrollamount="6" bgcolor="#000000"><font size="4" color="#00FF00">Contact Us For Nagy's Consulting &amp; Custom Training Service Rates...<p></p></font></marquee></center></div><br><hr><div><center><p></p><a href="https://www.udemy.com/user/randallnagy2" border="0"><p><img src="POJO%20or%20ENJO_files/JavaDFT.png"></p><p>Training Portfolio</p></a></center></div><br>
+<!-- Links -->
+<div class="menu_title"><a id="linkSidebarLinks" onclick="toggleBlock('SidebarLinks');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Links</a></div>
+<div id="toggleSidebarLinks" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/index.php">Home</a><br><a href="http://www.soft9000.com/blog9000/contact.php">Contact</a><br><br>Training Videos<br><a href="https://www.udemy.com/sql1-professional-sql-for-beginners/?couponCode=SQL1_FOR_10">SQLite</a><br><a href="https://www.udemy.com/professional-java-design-frameworks-threads-8100/?couponCode=S9K-JDFT-FOR10">Java Design</a><br><a href="https://www.udemy.com/python-1000/?couponCode=S9K_PY1K_10">Python Primer</a><br><a href="https://www.udemy.com/python-2000-beyond-the-basics/?couponCode=S9K-PY2000-410">Beyond Basic Python!</a><br><a href="https://www.udemy.com/the-gnu-tool-primer/?couponCode=S9K-GTP-410">GNU Tool Primer</a><br><a href="https://www.udemy.com/testing-success/?couponCode=S9K-SUCCESS-410">Testing Success</a><br><a href="https://www.udemy.com/python-interview-questions/learn/v4/overview">Free Python Interview</a><br><a href="https://www.udemy.com/how-to-java">Free Java Introduction</a><br><br>New Community<br><a href="https://www.facebook.com/Apache-Spark-For-Java-Developers-1206563889396624/">Apache Spark (4Q/2017)</a><br><a href="https://www.facebook.com/GNU-Cpp-for-Professionals-Video-Training-1822627264656384/?pnref=story">Professional C++ (3Q/2017)</a><br><a href="https://www.facebook.com/OAuth-Training-249165485519040/">OAuth Training (4Q/2017)</a><br><a href="https://www.facebook.com/Hadoop-For-Java-Developers-722504361260671/">Apache Hadoop (4Q/2017)</a><br><br>Social Media<br><a href="https://twitter.com/#!/RandallNagy">Nagy's Tweets</a><br><a href="http://www.linkedin.com/in/nagyspace">Nagy's Linkedin</a><br><a href="https://www.facebook.com/groups/101554466851140/?pnref=lhc">Java Training Group</a><br><a href="https://www.facebook.com/groups/Python3Training/">Python 3 Training Group</a><br><a href="https://www.facebook.com/groups/1242180509211906/">Server &amp; Cloud</a><br><a href="https://www.youtube.com/channel/UCfzBswgWKe4ZesvnLpuJrmA">YouTube</a><br><br>Misc<br><a href="http://www.soft9000.com/service/noj.php?n=Products.VideoSales">Training Inventory</a><br><a href="http://www.soft9000.com/blog9000/static.php?page=About_The_Author">About The Author</a><br>
+</div><br>
+
+<!-- Calendar -->
+<div class="menu_title"><a id="linkSidebarCalendar" onclick="toggleBlock('SidebarCalendar');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Calendar</a></div>
+<div id="toggleSidebarCalendar" class="menu_body">
+
+			<table style="border-style: none; text-align: center; cellpadding: 0px; cellspacing: 0px;" class="calendar">
+			<tbody><tr>
+			<td style="text-align: center"><a href="http://www.soft9000.com/blog9000/index.php?y=14&amp;m=04">«</a></td>
+			<td style="text-align: center" colspan="5"><b>May 2014</b></td>
+			<td style="text-align: center"><a href="http://www.soft9000.com/blog9000/index.php?y=14&amp;m=06">»</a></td>
+			</tr>
+			<tr><td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td style="text-align: center">1</td><td style="text-align: center">2</td><td style="text-align: center">3</td></tr><tr><td style="text-align: center">4</td><td style="text-align: center">5</td><td style="text-align: center">6</td><td style="text-align: center">7</td><td style="text-align: center">8</td><td style="text-align: center">9</td><td style="text-align: center">10</td></tr><tr><td style="text-align: center">11</td><td style="text-align: center">12</td><td style="text-align: center">13</td><td style="text-align: center">14</td><td style="text-align: center">15</td><td style="text-align: center">16</td><td style="text-align: center">17</td></tr><tr><td style="text-align: center">18</td><td style="text-align: center">19</td><td style="text-align: center">20</td><td style="text-align: center">21</td><td style="text-align: center">22</td><td style="text-align: center">23</td><td style="text-align: center">24</td></tr><tr><td style="text-align: center"><a href="http://www.soft9000.com/blog9000/index.php?d=25&amp;m=05&amp;y=14" title="1">25</a></td><td style="text-align: center">26</td><td style="text-align: center">27</td><td style="text-align: center">28</td><td style="text-align: center">29</td><td style="text-align: center">30</td><td style="text-align: center">31</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td colspan="7" style="text-align: center"><a href="http://www.soft9000.com/blog9000/index.php?y=17&amp;m=09&amp;d=05">09/05/17</a></td></tr></tbody></table>
+</div><br>
+
+<!-- Random Entry -->
+<div class="menu_title"><a id="linkSidebarRandomEntry" onclick="toggleBlock('SidebarRandomEntry');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Random Entry</a></div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/index.php?entry=entry131222-081704">Linux Disk Dump (35MB/Sec)</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry120511-062739">Learn how io Program with VB.NET</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry081219-013346">Carpe Vous!</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry131226-073738">New Project: Hadoop9000</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry131210-113247">Hadoop, Ununtu, and Maven ... Oh My!</a><br>
+</div><br>
+
+<!-- Archives -->
+<div class="menu_title"><a id="linkSidebarArchives" onclick="toggleBlock('SidebarArchives');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Archives</a></div>
+<div id="toggleSidebarArchives" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/archives.php">View Archives</a><br>
+<div id="archive_tree_menu"><ul><li>
+2017
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=17">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=17">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=17">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=06&amp;y=17">June</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=17">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=17">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=17">February</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=17">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2016
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=16">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=16">November</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=16">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=16">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=16">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=16">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=06&amp;y=16">June</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=16">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=04&amp;y=16">April</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=16">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=16">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2015
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=15">November</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=15">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=15">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=15">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=15">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=04&amp;y=15">April</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=15">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=15">February</a>
+</li>
+
+</ul>
+</li>
+<li>
+2014
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=14">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=14">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=14">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=14">May</a>
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=14&amp;entry=entry140525-002206">POJO or ENJO?</a><br>
+<b>05/25/14</b></li>
+
+</ul>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=14">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=14">February</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=14">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2013
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=13">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=13">November</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=13">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=13">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=13">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=13">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=06&amp;y=13">June</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=13">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=04&amp;y=13">April</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=13">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=13">February</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=13">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2012
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=12">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=12">November</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=12">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=12">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=12">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=07&amp;y=12">July</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=06&amp;y=12">June</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=12">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=04&amp;y=12">April</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=12">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=12">February</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=12">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2011
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=11">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=11">November</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=11">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=11">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=11">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=06&amp;y=11">June</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=05&amp;y=11">May</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=11">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=11">February</a>
+</li>
+
+</ul>
+</li>
+<li>
+2010
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=10">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=10">February</a>
+</li>
+
+</ul>
+</li>
+<li>
+2009
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=10&amp;y=09">October</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=09&amp;y=09">September</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=08&amp;y=09">August</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=04&amp;y=09">April</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=03&amp;y=09">March</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=02&amp;y=09">February</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=01&amp;y=09">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2008
+<ul>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=12&amp;y=08">December</a>
+</li>
+<li>
+<a href="http://www.soft9000.com/blog9000/index.php?m=11&amp;y=08">November</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div><br>
+
+<!-- Categories -->
+<div class="menu_title"><a id="linkSidebarCategories" onclick="toggleBlock('SidebarCategories');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Categories</a></div>
+<div id="toggleSidebarCategories" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/index.php?category=1">General (12)</a><br>
+<a href="http://www.soft9000.com/blog9000/index.php?category=20">News (6)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=21">Announcements (23)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=22">Events (1)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=23">Misc (3)</a><br>
+<a href="http://www.soft9000.com/blog9000/index.php?category=3">Technology (14)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=32">Servers (11)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=33">Embedded (1)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=34">Workstations (2)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=35">Programming (3)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=351">C/C++ (8)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=352">Python (15)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=353">VB (2)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=354">C# (0)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=355">Java (11)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=356">PHP (4)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=357">Etc (4)</a><br>
+<a href="http://www.soft9000.com/blog9000/index.php?category=4">Operating Systems (4)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=40">Cloud (3)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=42">Windows (3)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=43">POSIX (7)</a><br>
+&nbsp;&nbsp;<a href="http://www.soft9000.com/blog9000/index.php?category=44">Mobile (3)</a>
+
+</div><br>
+
+<!-- Search -->
+<div class="menu_title"><a id="linkSidebarSearch" onclick="toggleBlock('SidebarSearch');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Search</a></div>
+<div id="toggleSidebarSearch" class="menu_body">
+<form method="get" action="search.php"><p>Search <input size="16" name="q" type="text">&nbsp;<input value="Go" type="submit"></p></form>
+</div><br>
+
+<!-- Counter Totals -->
+<div class="menu_title"><a id="linkSidebarCounterTotals" onclick="toggleBlock('SidebarCounterTotals');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Counter Totals</a></div>
+<div id="toggleSidebarCounterTotals" class="menu_body">
+Total: <b>154,386</b><br>Today: <b>333</b><br>Yesterday: <b>741</b><br>
+</div><br>
+
+<!-- Most Recent Entries -->
+<div class="menu_title"><a id="linkSidebarMostRecentEntries" onclick="toggleBlock('SidebarMostRecentEntries');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Most Recent Entries</a></div>
+<div id="toggleSidebarMostRecentEntries" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/index.php?entry=entry170905-071149">PR1000.02: The Hex Dumper Project</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170901-084929">PR1000.20: Select &amp; Display a "MOTD"</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170831-005211">PR1000.11: Password / String Encryption</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170829-074707">Python 1000 Tops Reviews on Udemy</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170828-155701">PR1000.05: Challenger Exercise for Python 1000</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170827-010324">PR1000.10: Create a Basic "Password Counter" in Python</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170802-081634">Backing Up Files Across Multiple Devices</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170731-082726">FreeCAD: LED-Hacking an STL Figgurine</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170729-035311">An Easy PHP CRUD Example ... for SQL / Sqlite!</a><br><a href="http://www.soft9000.com/blog9000/index.php?entry=entry170724-063942">PyGame Example - The  Lazy Star</a><br>
+</div><br>
+
+<!-- Most Recent Comments -->
+<div class="menu_title"><a id="linkSidebarMostRecentComments" onclick="toggleBlock('SidebarMostRecentComments');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Most Recent Comments</a></div>
+<div id="toggleSidebarMostRecentComments" class="menu_body">
+<a href="http://www.soft9000.com/blog9000/comments.php?y=13&amp;m=12&amp;entry=entry131213-111444">Randall</a><br>01/09/14<br>Romain,  Thanks for the tip - Will do!  -Rn<p><a href="http://www.soft9000.com/blog9000/comments.php?y=13&amp;m=12&amp;entry=entry131213-111444">Romain</a><br>12/18/13<br>Nice Hadoop articles!  If you like Hue you should checkout...</p><p><a href="http://www.soft9000.com/blog9000/comments.php?y=13&amp;m=08&amp;entry=entry130811-050055">seo</a><br>01/09/17<br>nice work</p><p><a href="http://www.soft9000.com/blog9000/comments.php?y=11&amp;m=11&amp;entry=entry111103-113046">R.A. Nagy</a><br>04/09/12<br>You might want to try again now - I was able to paste that...</p><p><a href="http://www.soft9000.com/blog9000/comments.php?y=11&amp;m=11&amp;entry=entry111103-113046">William Osborne</a><br>04/09/12<br>I'm having problems. Basically, I get the SVN, fine,...</p><p>
+</p></div><br>
+
+<!-- Powered By -->
+<div class="menu_title"><a id="linkSidebarPoweredBy" onclick="toggleBlock('SidebarPoweredBy');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Powered By</a></div>
+<div id="toggleSidebarPoweredBy" class="menu_body">
+<div style="text-align: center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" height="15" width="80"></a><br><a href="http://php.net/"><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_php.png" alt="Powered by PHP 5.4.19" title="Powered by PHP 5.4.19" height="15" width="80"></a><br><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" height="15" width="80"><br><a href="http://www.soft9000.com/blog9000/rss.php"><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" height="15" width="80"></a><br><a href="http://www.soft9000.com/blog9000/atom.php"><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" height="15" width="80"></a><br><a href="http://www.soft9000.com/blog9000/rdf.php"><img style="margin-bottom: 5px;" src="POJO%20or%20ENJO_files/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" height="15" width="80"></a><br></div>
+
+</div><br>
+
+<!-- Bookmark Sharing -->
+<div class="menu_title"><a id="linkSidebarBookmarkSharing" onclick="toggleBlock('SidebarBookmarkSharing');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Bookmark Sharing</a></div>
+<div id="toggleSidebarBookmarkSharing" class="menu_body">
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c697ff844cb6c4f"><img src="POJO%20or%20ENJO_files/sm-share-en.gif" alt="Bookmark and Share" style="border:0" height="16" width="83"></a><script type="text/javascript" src="POJO%20or%20ENJO_files/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+
+</div><br>
+
+<!-- Creative Commons -->
+<div class="menu_title"><a id="linkSidebarCreativeCommons" onclick="toggleBlock('SidebarCreativeCommons');"><img src="POJO%20or%20ENJO_files/minus.gif" alt="twisty" height="11" width="11"> Creative Commons</a></div>
+<div id="toggleSidebarCreativeCommons" class="menu_body">
+<div style="text-align: center">
+
+<!--Creative Commons License--><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="POJO%20or%20ENJO_files/somerights20.gif" height="31" width="88"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License</a>.<!--/Creative Commons License--><!-- 
+<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<Work rdf:about="">
+		<license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
+	<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+	</Work>
+	<License rdf:about="http://creativecommons.org/licenses/by/3.0/"><permits 
+rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires 
+rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><permits 
+rdf:resource="http://web.resource.org/cc/DerivativeWorks"/></License></rdf:RDF> -->
+</div>
+
+</div><br>
+                    </div>
+                    <div id="maincontent">
+
+                      
+<div class="blog_subject">POJO or ENJO?<a id="entry140525-002206">&nbsp;</a></div>
+<div class="blog_byline">Sunday, May 25, 2014, 12:22 AM</div>
+		All Java software developers know that the term "POJO" is an acronym 
+stand-in; For quite some time now we have been using that P.O.J.O 
+moniker whenever we wanted to let others know that we wanted to manage a
+ "Plain Old Java Object."<br><br><img src="POJO%20or%20ENJO_files/PojoRefactoring02.png" alt="" height="336" width="400"><br><br>Often data-laden, the job of the POJOs is to typically "get" and/or "set" ("read" / "write") information around our objects. <br><br>A
+ massively popular concept, simplicity has surely been a key to success:
+ From automatic code generation to simple coding standards, the humble 
+POJO has provided data-centric couplings for everything from Dependency 
+Injection to Hibernate; There are POJO refractory procedures for every 
+popular Java IDE.<br><br><img src="POJO%20or%20ENJO_files/PojoProblem.png" alt="" height="378" width="500"><br><br>Yet POJOs have one key shortcoming: Their tight coupling to a localized method signature. <br><br>In short, when <i>using</i>
+ POJO members (such as "String getName()" or 
+"setGovernmentIdentifier(String SSN)"), we are hammering 
+application-centric dependencies into our code. Dependencies that can 
+make a generic frameworks far more difficult to change.<br><br>Of course
+ the use of adaptors, polymorphism, and object factories can help us 
+manage our POJO dependencies. All well and good. But the point of this 
+article is to discuss how Java Developers also have a unique weapon in 
+our language-arsenal: The humble Enumeration.<br><br><h2>Enumerated Data Type (EDT)</h2><br>We
+ have discussed the power of Java Enumeration in our blog before. Yet 
+far from allowing us to better manage return types, those of us who have
+ been marvelling over Java improvements should next add the concept of 
+data management to the list of enum-marvels.<br><br><h2>Over the Top</h2><br>Why use the word "marvel", rather than a less dramatic word? <br><br>I'm glad you asked! :-)<br><br><h3>Enum Marvel: Simple Syntax</h3><br>The first thing to note is that an 'Enum in Java is very simple to understand.<br><pre>public enum MightyEDT {<br>    edtName, <br>    edtAddress, <br>    edtIdentityTheft<br>}</pre><br>For
+ those familiar with C/C++, we will recognize the source of the syntax. 
+One might even feel the need to suppress a African-cat-sized yawn. While
+ valid syntax, note the missing ";" in the above?<br><br><h3>Enum Marvel: Member Functions</h3><br>Unlike
+ in C/C++ or .NET however, once we complete the syntax (i.e. add in the 
+semi-colon), we are setting the stage for amazing things.<br><pre>public enum MightyEDT {<br>    edtName, <br>    edtAddress, <br>    edtIdentityTheft ;<br>    <br>    public static void main(String ... args) {<br>        for(MightyEDT ref : MightyEDT.values()) {<br>            System.out.println(ref.ordinal());<br>        }<br>    }<br>}</pre><br>In
+ Java - and unlike everywhere elsewhere at the time of this writing - an
+ enumeration can have member functions. Just like a class.<br><br><h3>Enum Marvel: Data Indexing</h3><br>Running
+ the above example (yes, it is a demo folks), one should note that - by 
+default (and much like C/C++ and .NET) - that Java enumerations begin 
+with the index of "0":<br><pre>    public static void main(String ... args) {<br>        for(MightyEDT ref : MightyEDT.values()) {<br>            System.out.println(ref.ordinal());<br>        }<br>    }<br></pre><br>Much
+ like .NET (an unlike C/C++), each enumerated value itself is an 
+Object.... complete with it's own set of common, as well as special 
+'enum members:<br><pre>    public static void main(String ... args) {<br>        for(MightyEDT ref : MightyEDT.values()) {<br>            System.out.print(ref + ": " );<br>            System.out.println(ref.ordinal());<br>        }<br>    }</pre><br>Next,
+ as we consider that the entire world of data management is about 
+tagging data with known, human-palatable values, then we should consider
+ that our newly enumerated-values might become as important to us as is 
+their numerical offsets:<br><pre>edtName: 0<br>edtAddress: 1<br>edtIdentityTheft: 2<br></pre><br><h2>Data Tagging</h2><br>If
+ you know Java, then you might be familiar with the above concepts... 
+You might also be in the middle of likewise stifling an overdue 
+jungle-cat-yawn, as well. <br><br>Yet - as Shakespeare might say - here 
+is the rub: What if - rather than moving data about via brittle &amp; 
+breakable POJO signatures, that we instead use a tagged-data 
+value-approach? By using enumerations, might we be able to create an 
+object that will neither break over time, nor create queer 
+signature-dependencies throughout our applications? Even when adding (or
+ removing!) those data-laden getters &amp; setters?<br><br><h2>ENumerated Java Objects (ENJO)</h2><br>Consider what happens when we combine the POJOs 'getters and 'setters with Java's Enumeration.<br><pre>public enum MightyENJO {<br>    edtName, <br>    edtAddress, <br>    edtIdentityTheft ;<br>    <br>    private String[] data = new String[MightyENJO.values().length];<br><br>    public String get(MightyENJO tag) {<br>        return data[tag.ordinal()];<br>    }<br><br>    public boolean set(MightyENJO tag, String value) {<br>        if (value == null) {<br>            value = "";<br>        }<br>        data[tag.ordinal()] = value;<br>        return true;<br>    }   <br><br>}</pre><br>Adopting
+ the simple get / set pattern shown above, we now have a plausible 
+global convention. A practice we might ever use across all application 
+frameworks. An easy-to-use signature designed to manage the 
+read/write/update of 'stringifiable data types. <br><br>Better still, 
+when applied across all data-laden frameworks we might be working on, 
+the above enumerated get/set strategy need never change one framework at
+ the expense of another. All we need do is to either (1) save+parse the 
+.name() as a data prefix (a personal favourite), (2) map the .name() to a
+ column-meta, or (3) simply add/remove enumerated types from the end of 
+the 'enum.<br><br><center><img src="POJO%20or%20ENJO_files/EJOSignature.png" alt="" height="405" width="400"></center><br><br>Viva Homogeneity?<br><br><h2>Ultimate Marvel: Associating Metadata</h2><br>By this time in our little presentation you should rightly be asking yourself "so what the heck is the point of all this?"<br><br>The
+ point is this: The nature of all data-laden interfaces is to relate 
+stored values to human-consumable meta. Specifically, once armed with an
+ ENJO we are free to associate far more than an enumerated-name to a 
+data-field. -Through the miracle of <i>private enum construction</i>, each enumerated Java-type can optionally store even more meta-data:<br><pre>public enum MightyENJO {<br>    edtName("The name of your client"), <br>    edtAddress("The address of your client"), <br>    edtIdentityTheft("The Mark of the Beast") ;<br>    <br>    public final String toolTip;<br>    <br>    private MightyENJO(String toolTip) {<br>        this.toolTip = toolTip;<br>    }<br>    <br>    public String get(MightyENJO tag) {<br>        return "looke up the data here";<br>    }<br>    public String set(MightyENJO tag, String value) {<br>        return "assign the data here";<br>    }    <br>}</pre><br>Decidedly
+ our own polymorphic type, the above signature is far more 
+framework-friendly: In addition to being able to quickly re-factor tags 
+such as "Identity Theft" to "Government Provides For Family", we can 
+also just as rapidly update any associated GUI-displayable meta-data as 
+well.<br><br><h2>Type Conversion</h2><br>We should certainly feel free to overload our 'setter to manage the to-stirng conversion for any requisite data types.<br><pre><br> public boolean set(MightyENJO tag, String value) {<br>     if (value == null) {<br>         value = "";<br>     }<br>     data[tag.ordinal()] = value;<br>     return true;<br> }<br> public boolean set(MightyENJO tag, float value) {<br>        data[tag.ordinal()] = "" + value;<br>        return true;<br> }</pre>While
+ human interfaces invariably favor strings, when it is time to do the 
+math (pun intended), native type conversions can just as easily be 
+included:<br><pre>    public Integer getInt(MightyENJO token) {<br>        return Integer.parseInt(get(token));<br>    }<br>    public BigDecimal getDec(MightyENJO token) {<br>        return new BigDecimal(get(token));<br>    }</pre><br><h2>How ENJOs Work for Me</h2><br>To
+ ultimately understand why I took the time to write this article, allow 
+me to relate that I stumbled upon the need for the EDT/ENJO while 
+working on a personal information manager. Starting out as a simple way 
+to manage my bookmarks, this single CRUD-management application has been
+ updated over the years to manage flashcards, invoicing, email, taxes, 
+and even collections of photographs &amp; other files... <br><br>While 
+working to store a single Data-Access-Object (DAO) in as many formats as
+ possible (XML, CSV, TDF, SQL ...) I simply got tired of perpetually 
+updating the tool tips, column names, data-dictionary definitions, and 
+the related GUI &amp; Database 'Meta. <br><br>When using an Enumerated 
+Data-Type (ETD) however, I discovered that a single ENJO could provide a
+ Java-standard way to change (for example) the "Name" column across all 
+JTables. --In very deed I discovered that from forms &amp; tool-tips to 
+Databases and XML Documents alike, morphing an entire application away 
+from collecting "Names" to something like "Files" or "Email Address" can
+ take but a <i>very</i> few moments. <br><br>So while each application 
+was destined to manage far different data over time, at the 
+framework-level each application pretty much managed the exact same 
+brittle set of POJO-empesterd CRUD activities. <br><br>Conversely - rather than relying upon unique signature - not only will a single 'enum for <b>Name</b> rapidly re-factor to <b>Email</b>
+ without ripple effect, but even when we added / removed multiple data 
+values efficiences may by now perhaps be obvious. -Having a single 
+opaque, asignature data type even allows cross-format serialization / 
+deserialization routines (XML, CSV, etc.) to update automatically. -One 
+may even choose to name-mangle metadata to support enumerated version 
+identifiers (etc.)<br><br><h2>Abstractions</h2><br>While we may achieve a
+ similar independence with a properly designed abstraction, over time I 
+have found the use of an EDT to be far more forgiving. -Certainly when 
+the goal is to create a deeply embedded cross-application codebase. When
+ requirements change so as even my well designed signature-laden 
+frameworks break, my ENDO Framework can continue to evolve as fast as 
+agility demands. <br><br>From a cross-application framework 
+vantage-point therefore, ENDO's can be even more generic (if not easier 
+to manage!) than designing frameworks that rely upon adaptors and / or 
+Generics. Over time I have discovered that enumerated data frameworks 
+are allot less time consuming to both create, as well as to re-purpose. <br><br><h2>Conclusion</h2><br>Of
+ course unlike when using Template&lt;T&gt; the creation of an E.N.J.O 
+remains uniquely Java-ish at the moment. Unlike the Enumerated Java 
+Object however, an Enumerated Data Type can be created for just about 
+any language (even PHP.)<br><br>So even though technologies such as 
+C/C++ and .NET lag far behind the way Java enumeration has evolved - 
+allow me to offer up this new EDT/ENJO concept. I do so in the sincere 
+hope that you will find the pattern useful in your cross-framework 
+re-purposing efforts, as well. <br>
+<hr>
+<h2>Comments</h2><p>
+</p><div class="blog_subject">Add Comment</div>
+
+		Fill out the form below to add your own comments.<p>
+
+		</p><form action="comment_add_cgi.php" method="post" name="vbform">
+			<input name="y" value="14" type="hidden">
+			<input name="m" value="05" type="hidden">
+			<input name="entry" value="entry140525-002206" type="hidden">
+
+			<label for="comment_name">Your Name:</label><br><input name="comment_name" id="comment_name" autocomplete="off" type="text"><br><label for="comment_email">Email:</label><br><input name="comment_email" id="comment_email" autocomplete="off" type="text"><br><label for="comment_url">URL:</label><br><input name="comment_url" id="comment_url" autocomplete="off" type="text"><br><label for="comment_remember">Remember me:<input name="comment_remember" id="comment_remember" value="1" autocomplete="off" type="checkbox"></label><br><br>
+			<!-- NEW -->
+			Insert Special:<br>
+			<input class="bginput" value=" b " onclick="ins_styles(this.form.comment_text,'b','');" type="button"><input class="bginput" value=" i " onclick="ins_styles(this.form.comment_text,'i','');" type="button"><input class="bginput" value="center" onclick="ins_styles(this.form.comment_text,'center','');" type="button"><input class="bginput" value="url" onclick="ins_url_no_options(this.form.comment_text);" type="button"><select name="style_dropdown" onchange="ins_style_dropdown(this.form.comment_text,this.form.style_dropdown.value);">
+				<option label="--" value="--" selected="selected">--</option><option label="[pre]xxx[/pre]" value="pre">[pre]xxx[/pre]</option><option label="[code]xxx[/code]" value="code">[code]xxx[/code]</option><option label="[strong]xxx[/strong]" value="strong">[strong]xxx[/strong]</option><option label="[b]xxx[/b]" value="b">[b]xxx[/b]</option><option label="[em]xxx[/em]" value="em">[em]xxx[/em]</option><option label="[i]xxx[/i]" value="i">[i]xxx[/i]</option><option label="[strike]xxx[/strike]" value="strike">[strike]xxx[/strike]</option><option label="[hN]xxx[/hN] (N=1-6)" value="hN">[hN]xxx[/hN] (?=1-6)</option></select><noscript><p>Available
+ 
+Tags</p><ul><li>[pre]xxx[/pre]</li><li>[code]xxx[/code]</li><li>[strong]xxx[/strong]</li><li>[b]xxx[/b]</li><li>[em]xxx[/em]</li><li>[i]xxx[/i]</li><li>[strike]xxx[/strike]</li><li>[hN]xxx[/hN]
+ (N=1-6)</li></ul></noscript>
+			<label for="comment_text">Comment:</label><br>
+			<textarea style="width: 500px;" id="comment_text" name="comment_text" rows="20" cols="50" autocomplete="off"></textarea><br><br>
+
+			<!-- Not logged in! Show capcha --><label for="comment_capcha">Anti-Spam: Enter  246923</label><br><input name="comment_capcha" id="comment_capcha" autocomplete="off" maxlength="6" type="text"><br><br>Moderation is turned on for this blog. Your comment will require the administrators approval before it will be visible.<br><br>
+			<input name="submit" value="Post Comment" type="submit">
+
+		</form>
+
+		
+<hr>
+
+                    </div>
+              <div id="footer"> - Page Generated in 0.9033 seconds</div>
+        </div>
+      </div>
+    
+</td></tr>
+</tbody></table><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" frameborder="0"></iframe><div style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;" id="_atssh"><iframe id="_atssh249" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px none; left: 0px;" src="POJO%20or%20ENJO_files/sh.htm"></iframe></div><style id="service-icons-0"></style>
+    
+
+</body></html>

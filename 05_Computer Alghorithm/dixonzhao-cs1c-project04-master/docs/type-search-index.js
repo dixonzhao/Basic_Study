@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"queues","l":"Jukebox"},{"p":"queues","l":"Queue.ListIterator"},{"p":"cs1c","l":"MillionSongDataSubset"},{"p":"queues","l":"MyTunes"},{"p":"queues","l":"Queue.Node"},{"p":"queues","l":"projRequi"},{"p":"queues","l":"Queue"},{"p":"cs1c","l":"SongEntry"},{"p":"cs1c","l":"TimeConverter"}]

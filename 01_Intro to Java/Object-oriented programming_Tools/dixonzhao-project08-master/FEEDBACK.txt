@@ -1,0 +1,43 @@
+FEEDBACK:
+
+Overall, well done in sticking to it this quarter.
+
+
+-0 Check for spelling errors in your README.txt file as it makes 
+   your description difficult to read!
+  
+
+Very good outline in your README file. The description of a few
+   items is unclear. Please see below.
+
+
+-0 Why not provide snapshots which also show a subset of the countries?
+
+
+-0 Missing parameter in class GraphView for LineChart instances. For example, define
+   the parameter as follows:
+   LineChart<Number,Number> lineC;
+
+
+-0 The buttons on the left side are not readable by default. Consider
+   setting the default size of the window so these are readable.
+     
+  
+Extra Credit Opportunity 1:
++0 Your README states that you graphed a second data set?
+   Where is the data in your project? For example, did you include a second
+   CSV file? Would you share this file?  Would you share a link to where 
+   you found your data?
+
+
+Extra Credit Opportunity 2:
++0 Without a second data set, what are you switching the data between.
+   In order to receive credit you must complete extra credit opportunity 1
+   as required by project description. See excerpt:
+   "To receive the full extra credit:
+        Make sure that your implementation and submission meets the 
+		rest of the project requirements and have completed extra credit 
+		opportunity 1 described above."   
+   
+-Bita.
+

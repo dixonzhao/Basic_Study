@@ -1,0 +1,8 @@
+bananas,2.50
+beans,4
+beef,11.50
+chicken,7
+fish,15
+juice,4
+milk,6
+ramen,8

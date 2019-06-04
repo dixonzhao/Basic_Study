@@ -1,0 +1,16 @@
+lounge,Solo
+favorites,Shadows - Original
+road trip,Tom's Diner
+favorites,Take Me Away
+road trip,Here With Me
+lounge,Nuvole Bianche
+lounge,Luka
+favorites,Stoned
+road trip,Get Happy
+favorites,We Belong
+road trip,Let's Dance
+road trip,Oh What a Feeling
+favorites,Stairway To The Stars
+road trip,Separate Ways (Worlds Apart)
+road trip,Road Home
+lounge,Traffic

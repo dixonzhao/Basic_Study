@@ -1,0 +1,428 @@
+
+  body {
+    background-color: #FAFAD2;
+    color: #666633;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+    /* Standard. Readable */
+    font-family: Arial, Helvetica, Sans-Serif;
+  }
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Trebuchet MS', 'Gill Sans', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #666633; /* headline_txt_color */
+    text-shadow: #bbb 2px 2px 1px;
+
+  margin: 2px 0px 2px 0px;
+}
+
+h1
+{
+  font-size: 20px;
+}
+
+h2
+{
+  font-size: 18px;
+}
+
+h3
+{
+  font-size: 16px;
+}
+
+h4
+{
+  font-size: 14px;
+}
+
+h5
+{
+  font-size: 12px;
+}
+
+h6
+{
+  font-size: 10px;
+}
+
+  p
+  {
+    margin: 8px 0px 8px 0px;
+  }
+
+  hr  
+  {
+    color: #D9D9D9;
+    background-color: #D9D9D9;
+    margin: 8px 0px 8px 0px;
+  }
+
+  img {
+    border-style: none;
+  }
+
+  form {
+    font-size: 11px;
+  }
+
+  input, select, option, textarea
+  {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  a:link, a:visited {
+    color: #993333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #FF3333;
+  }
+
+  a:active {
+    color: #3333FF;
+  }
+
+  code, pre {
+    font-family: 'Courier New', Courier, Fixed;
+  }
+  
+  pre {
+    width: 500px;
+    overflow: auto;
+    border: 1px dotted #D9D9D9;
+    padding: 5px;
+  }
+
+blockquote {
+  color: #777;
+  margin: 15px 30px 0 10px;
+  padding-left: 20px;
+  border-left: 5px solid #ddd
+}
+
+
+  #page {
+    background-color: #FFFFF0;
+    max-width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #4D4D45;
+  }
+
+  #header {
+    background-repeat: no-repeat;
+    background-image: url('http://www.soft9000.com/service/_graphics/m_Soft9000.gif');
+    height: 75px;
+    border-color: #4D4D45;
+    color: #FFFFFF;
+    background-color: #FAFAD2;
+    font-family: 'Trebuchet MS', 'Gill Sans', Helvetica, sans-serif;
+    margin: 0px;
+    padding: 4px 12px 4px 12px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  #footer {
+    clear: both;
+    background-color: #EEEEEE;
+    color: #666666;
+    background: #EEEEEE;
+    border-top: 1px solid #4D4D45;
+    padding: 10px;
+    text-align: left;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #666633;
+  }
+
+  #maincontent .blog_subject {
+    color: #666633;
+    font-family: 'Trebuchet MS', 'Gill Sans', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  #maincontent .blog_subject img
+  {
+    /* padding: top right bottom left */
+    padding: 0px 0px 0px 10px;
+    float: right;
+  }
+
+  #maincontent .blog_date {
+    color: #999999;
+  }
+
+  #maincontent .blog_categories {
+    color: #999999;
+  }
+
+  #maincontent .blog_body_solid  {
+    color: #666633;
+    background-color: #FAFAD2;
+    border-color: #666633;
+    padding: 1px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+  }
+
+#maincontent .blog_body_clear
+{
+  padding: 0px;
+  border-color: #FFF;
+  border-width: 0px;
+  border-style: solid;
+}
+
+#maincontent .blog_byline
+{
+  color: #999999; /* date_txt_color */
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+  
+  #maincontent {
+    max-width: 525px;
+    background-color: #FFFFF0;
+    padding: 10px;
+  }
+
+  #sidebar {
+    max-width: 230px;
+    float: right;
+    background-color: #F8DA54;
+    border-left: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px;
+  }
+
+  #sidebar .menu_body {
+    border-color: #D9D9D9;
+    padding: 10px;
+    border-width: 1px;
+    border-style: dashed;
+  }
+
+#sidebar .menu_title
+{
+  font-family: 'Trebuchet MS', 'Gill Sans', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#sidebar .menu_title a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+  #archive_tree_menu li
+  {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px #F0F dashed; */
+  }
+
+#sidebar .divider {
+  margin: 8px 0px 8px 0px;
+}
+
+#sidebar .calendar a
+{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.divider { margin: 20px 0px 15px 0px; }
+
+
+	
+/* -------------------- Tables -------------------- */
+
+.data_table table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding-bottom: .4em;
+	margin-bottom: .8em;
+	background: white;
+	}
+	.data_table th, .data_table td {
+		padding: .2em .4em 0 .4em;
+		border: 1px #b5d0dc solid;
+		text-align: left;
+		vertical-align: top;
+		}
+	.data_table th {
+		background: #f0f6f8;
+		font-weight: bold;
+		}
+	.data_table caption {
+		padding: .4em .4em .2em .4em;
+		font-size: 1.1em;
+		background: #dae7ed;
+		border: 1px #b5d0dc solid;
+		border-bottom: none;
+		text-align: left;
+		vertical-align: top;
+		}
+			
+	/* -------------------- Forms -------------------- */
+
+	input { cursor: pointer; }
+	
+	input[type='text'],
+	input[type='password'],
+	textarea {
+		/* color: #2e2812;
+		background: #fefaec;
+		*/
+		cursor: text;
+		}
+		
+	input[type='button'],
+	input[type='submit'],
+	select {
+		vertical-align: middle;
+		}
+		
+	input[type='checkbox'] {
+		vertical-align: bottom;
+		}
+	
+	legend {
+		padding: 0 6px;
+		}
+		
+	fieldset {
+		padding: 10px;
+		margin: .8em 0;
+		border: 1px solid #aac0e9;
+		}
+	
+	select { padding: .1em .2em 0 .2em; cursor: pointer; }
+	option { padding: 0 .4em; }
+	
+	input[type='text']:focus,
+	input[type='password']:focus,
+	textarea:focus {
+		background: white;
+	}
+	
+	.linerule {
+		border-bottom: 1px dotted #aac0e9;
+		margin-bottom: 1.4em;
+	}
+
+/* -------------------- Admin Forms -------------------- */
+
+.defaultform {
+	width: 480px;
+	}
+	
+	/* Supporting Styles */
+	
+	.defaultform label {
+		font-size: 1.0em;
+		}
+	
+	.defaultform .note {
+		font-size: 0.9em;
+		line-height: 1.3em;
+		margin-bottom: 0.5em;
+		display: inline-block;
+		color: #92865c;
+		}
+	.defaultform .optional {
+		color: #4AAB27;
+		font-size: 0.7em;
+		text-transform: uppercase;
+		font-weight: bold;
+		}
+		
+	.defaultform textarea,
+	.defaultform input[type='text'],
+	.defaultform input[type='password'] {
+		width: 458px; /* w-22 */
+		}
+	
+	
+	/* Field width = (form width / n) - 22 */
+	/* Column width = (form width / n) - 16 */
+	
+	/* These are explicit classes for IE6 which can't handle the psuedo-selectors input[type='text'] */
+	
+	.defaultform .single { width: 458px; }
+	.defaultform .double { width: 218px; }
+	.defaultform .triple { width: 138px; }
+	.defaultform .quadruple { width: 98px; }
+	
+	/* One Column */
+	.defaultform .column_single {
+		float: left;
+		display: block;
+		width: 464px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		}
+		.defaultform .column_single textarea,
+		.defaultform .column_single input[type='text'],
+		.defaultform .column_single input[type='password'] {
+			width: 458px;
+			}
+			
+	/* Two Column */
+	.defaultform .column_double {
+		float: left;
+		display: block;
+		width: 224px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		}
+		.defaultform .column_double textarea,
+		.defaultform .column_double input[type='text'],
+		.defaultform .column_double input[type='password'] {
+			width: 218px;
+			}
+	
+	/* Three Column */
+	.defaultform .column_triple {
+		float: left;
+		display: block;
+		width: 144px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		}
+		.defaultform .column_triple textarea,
+		.defaultform .column_triple input[type='text'],
+		.defaultform .column_triple input[type='password'] {
+			width: 138px;
+			}
+	
+	/* Three Column */
+	.defaultform .column_quadruple {
+		float: left;
+		display: block;
+		width: 104px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		}
+		.defaultform .column_quadruple textarea,
+		.defaultform .column_quadruple input[type='text'],
+		.defaultform .column_quadruple input[type='password'] {
+			width: 98px;
+			}

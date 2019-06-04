@@ -1,0 +1,40 @@
+FEEDBACK:
+
+Accepted as on time.
+
+Well done in converting your implementation to a generic data structure!
+
+
+Good implementation of class LinkedList contains() method by overriding and calling the equals() method! 
+
+
+-0 Why do you need the default LinkedList() constructor which as no behavior?
+   Remove this unless is modifying the object.
+   Next time minus for this.
+
+
+-0 The Node class is generic. Hence, references of type Node should also be generic. 
+   Instead of:
+public class LinkedList<T> implements Iterable{
+	 private Node begin;
+	 private Node temp;
+	 
+   Specify the generic type that the Linked List class is using:
+public class LinkedList<T> implements Iterable{
+	 private Node<T> begin;
+	 private Node<T> temp;
+	 
+   Otherwise, it defaults to a "raw" type which in this case is the Object class. As 
+   a result we loose the advantage of compilation checks on generic types.
+
+
+-1 Incomplete implementation of class Country getNumSupscriptionsForPeriod() method,
+   which should use an iterator to traverse the subscriptions. Partially accepting
+   with for-each loop.
+   See project description excerpt:
+   "Use an iterator in the getNumSupscriptionsForPeriod() method of the Country class. 
+   This method should use the iterator to traverse the list of SubscriptionYear elements."
+   Next time minus three for key requirements such as this.
+      
+-Bita.
+

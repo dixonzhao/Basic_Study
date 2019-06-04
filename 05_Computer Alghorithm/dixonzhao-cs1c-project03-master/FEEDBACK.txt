@@ -1,0 +1,55 @@
+FEEDBACK:
+
+-10% late submission.
+
+
+Good testing of your implementation. You're very close. See suggestions
+    below.
+    
+    
+Efficient implementation of clearing the stack!
+
+
+-0 incomplete .gitignore file. Results on your "Temp_Output" folder is being committed 
+   to repository. Why are you submitting compiled .class files?
+
+
+-0 Remove the parameter for inner class Node as follows:   
+      public class Node
+      { ... }
+   Otherwise the parameter MyType of inner class Node will
+   hide the type of the outer StackList class. 
+   Essentially writing:
+       public class StackList<MyType> ...
+       { 
+           MyType memberVar;
+           
+           public class Node<MyType>
+           { 
+               MyType someVar; 
+           }
+       }
+   Is the same as writing:
+       public class StackList<MyType> ...
+       { 
+           MyType memberVar;
+           
+           public class Node<AnotherType>
+           { 
+               AnotherType someVar; 
+           }
+       }
+    which may introduce unwanted side effects and bugs.
+
+
+-1 incomplete implementation of class Navigator setCurrentLink() method does not
+   successfully reset the forwardLinks stack.
+   See sample output below.
+
+   Suggestion: Try the adding a few links to your browser’s forward links stack.
+               Then, go to a new page. What happens?
+    Then call the class StackList clear() method:
+       forwardLinks.clear()  
+       
+-Bita.
+

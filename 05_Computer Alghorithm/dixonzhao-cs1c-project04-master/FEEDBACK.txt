@@ -1,0 +1,18 @@
+FEEDBACK:
+
+Excellent implementation of queue structure!
+Suggestion: Parameterize the generic interface Iterable.
+
+
+Very good use of exception handling when dequeuing from an empty Queue.
+
+
+Iterable is a raw type. References to generic type Iterable<T> should be parameterized
+
+
+Good descriptive README describing the purpose of each file.
+   However, I'm still unclear why you are submitting a Java file to
+   keep track of the project requirements when it is not referenced.
+
+-Bita.
+

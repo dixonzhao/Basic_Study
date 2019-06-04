@@ -1,0 +1,109 @@
+FEEDBACK:
+
+You're on the right track, however your implementation does not correctly
+        update the lazy search tree for various test cases. Provide additional test
+        beyond those provided.
+
+    	Always *verify* your results. Don't assume just because you have 
+	an output on the screen that it is correct.
+	
+	
+-1 LazySearchTree uses a generic type of the data. Why are you casting
+   this to Item?
+   The tree should not be aware of implementation details of the data
+   such as in:
+  protected void remove(LazySTNode root, E x  )
+   {
+      ...
+      // found the node, for Item class Only
+      if(root.data instanceof Item){
+         if(compareResult==0)
+            if(((Item) root.data).getCount()>1){
+               ((Item) root.data).decrementCount();
+//               root.deleted=true;
+               return;
+            } else{
+               if(((Item) root.data).getCount()==1){
+                  ((Item) root.data).decrementCount();
+                  mSize--;
+               }
+               mSize--;
+               root.deleted=true;
+            }
+      }
+
+
+
+-3 Incomplete implementation of findMin() and findMax()
+   does not correctly traverse the tree of non-deleted nodes.
+   See sample output below.
+   
+Suggestion: When searching for the minimum make sure to search
+   both left and right subtrees:
+   if (root is null)
+      simply return;
+   otherwise:
+   findMin on left subtree and return node found;
+   check if current root we're at is deleted, if not then return current root;
+   findMin on right subtree and return node found;   <--- you are missing this key portion
+   
+
+
+-0.5 What is the purpose of the following for-loop which increments a count?
+ if(root.deleted==true) {
+         for (int i=0; i < 500; i++)
+            ((Item) root.data).incrementCount();
+         checkFirst=true;
+      }
+     Without sufficient documentation it is difficult to understand your approach.
+      
+     
+other comments:
+Consider removing large chunks of empty lines and comments as it clutters
+    your output making it more difficult to read your implementation.
+ 
+ 
+Extra Credit Opportunity:
++0 Successful testing of findMin() and findMax() is incomplete.
+   For future make sure to successfully complete the required portion of the assigning
+   before attempting the extra credit portion.
+   See above feedback.	  
+   
++0.5 Good start to testing a LazySearchTree version of SongEntry objects in class 
+   FoothillTuneStore. However, the project description requires that you reuse
+   your LazySearchTree and SongEntry class:
+   "Create a class called FoothillTunesStore. Apply the same new LazySearchTree
+   data structure to this new class."
+
+   Why not use the discussion forum to ask for clarification before putting in 
+   work into the extra credit portion?
+       
+-Bita.
+
+
+
+sample output 1:
+at line #4: buy mango
+First item: milk:1 
+Last item: milk:1 
+...
+Testing traversing "hard" inventory:
+mango:0  milk:1  tomatoes:1  
+
+Testing traversing "soft" inventory:
+milk:1  tomatoes:1  
+
+
+
+sample output 2:
+...
+at line #15: add tomatoes
+First item: mango:1 
+Last item: tomatoes:2 
+...
+Testing traversing "hard" inventory:
+bread:0  chicken:0  lemon:1  mango:1  milk:0  soup:0  tomatoes:2  watermelon:1  zucchini:1  
+
+Testing traversing "soft" inventory:
+lemon:1  mango:1  tomatoes:2  watermelon:1  zucchini:1  
+

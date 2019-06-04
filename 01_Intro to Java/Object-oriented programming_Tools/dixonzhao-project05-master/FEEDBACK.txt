@@ -1,0 +1,18 @@
+FEEDBACK:
+
+Well done in converting your array to the more flexible linked 
+    list data structure!
+    
+    
+-0.5 Incomplete implementation of CountryList toString() method which should 
+   call the toString() method of class Country. The data structure should not
+   be aware of the contents of the data. For example, why are you calling the
+   getName() method of a Country object element?
+   
+   Next time minus two for this.
+   
+   
+Very good detailed description in README outlining the purpose of your new classes.
+
+-Bita.
+
