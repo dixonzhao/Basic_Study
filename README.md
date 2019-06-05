@@ -12,4 +12,3 @@ Mooc Java Engineer Stage 1: Introduction in Java
 (In progress)Mooc Java Engineer Stage 4: SSM to Spring Boot  
 
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-[![LICENSE](https://www.mit.edu/~amini/LICENSE.md)
